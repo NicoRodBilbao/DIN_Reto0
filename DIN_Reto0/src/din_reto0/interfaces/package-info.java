@@ -4,9 +4,3 @@
  * and open the template in the editor.
  */
 package din_reto0.interfaces;
-
-import java.util.ResourceBundle;
-
-public interface Model {
-    String getGreeting();
-}

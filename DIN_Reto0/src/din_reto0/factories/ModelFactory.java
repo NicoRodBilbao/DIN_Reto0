@@ -6,12 +6,19 @@
 package din_reto0.factories;
 
 import din_reto0.interfaces.Model;
-import din_reto0.ModelImplementation;
+import din_reto0.modelo.ModelImplementation;
+import din_reto0.modelo.ModelDB;
 
 public class ModelFactory {
-        private static Model m = new ModelImplementation();
+        private static Model m;
         
-        public static Model getAccessModel() {
+        public static Model getAccessModel(String access) {
+            if (access.equalsIgnoreCase("FILE")) {
+                m = new ModelImplementation();
+            }
+            else {
+                m = new ModelDB();
+            }
             return m;
         }
 }

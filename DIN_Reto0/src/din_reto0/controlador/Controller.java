@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package din_reto0;
+package din_reto0.controlador;
 
 import din_reto0.interfaces.View;
 import din_reto0.interfaces.Model;
@@ -14,8 +14,8 @@ public class Controller {
     public static Model m;
     
     public Controller(View v, Model m) {
-        v = this.v;
-        m=this.m;
+        this.v = v;
+        this.m=m;
     }
 
     public static View getV() {
@@ -26,12 +26,5 @@ public class Controller {
         return m;
     }
 
-    public static void setV(View v) {
-        this.v = v;
-    }
-
-    public static void setM(Model m) {
-        this.m = m;
-    }
     
 }
