@@ -12,26 +12,24 @@ import din_reto0.factories.ViewFactory;
 import din_reto0.interfaces.View;
 import din_reto0.interfaces.Model;
 import java.util.ResourceBundle;
-
+/**
+  * 
+  * @author nikol
+ */
 public class Application {
-
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
-            run();
-    }
-    
-    private static void run() {
-        ResourceBundle configFile = 
-        ResourceBundle.getBundle("din_reto0.control");
+            ResourceBundle configFile = 
+        ResourceBundle.getBundle("din_reto0.controlador.control");
         String view = configFile.getString("VIEW"),
          access = configFile.getString("ACCESS");
         
-        Controller c = new Controller(getView(view), getModel(access));
-        c.getV().showGreeting(c.getM().getGreeting());
+        new Controller(ViewFactory.getView(view), ModelFactory.getModel(access)).
+                run();
+ 
     }
-    private static View getView(String view) {
-        return ViewFactory.getAccessView(view);
-    }
-    private static Model getModel(String access) {
-        return ModelFactory.getAccessModel(access);
-    }
+   
 }

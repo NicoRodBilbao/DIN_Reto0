@@ -13,7 +13,7 @@ public class ModelImplementation implements Model {
     @Override
     public String getGreeting() {
         ResourceBundle configFile = 
-        ResourceBundle.getBundle("din_reto0.control");
+        ResourceBundle.getBundle("din_reto0.controlador.control");
         return configFile.getString("MSG");
     }
 

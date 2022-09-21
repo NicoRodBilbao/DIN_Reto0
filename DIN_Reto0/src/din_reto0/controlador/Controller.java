@@ -18,13 +18,10 @@ public class Controller {
         this.m=m;
     }
 
-    public static View getV() {
-        return v;
+    
+    public void run(){
+  
+        v.showGreeting(m.getGreeting());
     }
-
-    public static Model getM() {
-        return m;
-    }
-
     
 }

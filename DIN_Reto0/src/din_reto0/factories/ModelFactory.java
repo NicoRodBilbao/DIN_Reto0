@@ -12,7 +12,7 @@ import din_reto0.modelo.ModelDB;
 public class ModelFactory {
         private static Model m;
         
-        public static Model getAccessModel(String access) {
+        public static Model getModel(String access) {
             if (access.equalsIgnoreCase("FILE")) {
                 m = new ModelImplementation();
             }

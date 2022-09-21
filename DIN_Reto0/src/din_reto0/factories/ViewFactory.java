@@ -12,7 +12,7 @@ import din_reto0.vista.ViewGUI;
 public class ViewFactory {
         private static View v;
         
-        public static View getAccessView(String view) {
+        public static View getView(String view) {
             
             if(view.equalsIgnoreCase("TXT")){
                 v = new ViewImplementation();
