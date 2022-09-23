@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package din_reto0;
+package din_reto0.vista;
 
 import din_reto0.interfaces.View;
 
