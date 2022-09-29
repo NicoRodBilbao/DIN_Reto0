@@ -10,16 +10,16 @@ import din_reto0.interfaces.View;
 import din_reto0.vista.ViewGUI;
 
 public class ViewFactory {
-        private static View v;
+        private static View view;
         
-        public static View getView(String view) {
+        public static View getView(String viewType) {
             
-            if(view.equalsIgnoreCase("TXT")){
-                v = new ViewImplementation();
+            if(viewType.equalsIgnoreCase("TXT")){
+                view = new ViewImplementation();
             }else{
-                v = new ViewGUI();
+                view = new ViewGUI();
             }
-            return v;
+            return view;
         }
         
         

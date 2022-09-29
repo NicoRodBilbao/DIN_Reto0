@@ -10,8 +10,8 @@ import din_reto0.interfaces.View;
 public class ViewImplementation implements View{
 
     @Override
-    public void showGreeting(String s) {
-        System.out.println(s);
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
     }
     
 }

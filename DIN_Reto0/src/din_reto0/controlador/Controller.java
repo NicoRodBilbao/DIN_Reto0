@@ -10,18 +10,18 @@ import din_reto0.interfaces.Model;
 
 public class Controller {
     
-    public static View v;
-    public static Model m;
+    public static View view;
+    public static Model model;
     
-    public Controller(View v, Model m) {
-        this.v = v;
-        this.m=m;
+    public Controller(View view, Model model) {
+        this.view = view;
+        this.model=model;
     }
 
     
     public void run(){
   
-        v.showGreeting(m.getGreeting());
+        view.showGreeting(model.getGreeting());
     }
     
 }
