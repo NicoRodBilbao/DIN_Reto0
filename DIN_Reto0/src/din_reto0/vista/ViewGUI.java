@@ -20,11 +20,11 @@ import javafx.stage.Stage;
  * @author nikol
  */
 public class ViewGUI extends javafx.application.Application implements View {
-    public static String t;
+    public static String localGreeting;
     
      @Override
     public void start(Stage primaryStage) {
-        Label label = new Label(t);
+        Label label = new Label(localGreeting);
    
         StackPane root = new StackPane();
         root.getChildren().add(label);
@@ -39,9 +39,9 @@ public class ViewGUI extends javafx.application.Application implements View {
 
       @Override
      
-    public  void showGreeting(String s) {
-        t=s;
-        launch(s);
+    public  void showGreeting(String greeting) {
+        localGreeting=greeting;
+        launch(greeting);
     }
 
   

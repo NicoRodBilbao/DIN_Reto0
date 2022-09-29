@@ -6,5 +6,5 @@
 package din_reto0.interfaces;
 
 public interface View {
-    void showGreeting(String s);
+    void showGreeting(String greeting);
 }
