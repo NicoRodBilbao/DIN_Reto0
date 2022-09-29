@@ -13,13 +13,17 @@ import din_reto0.interfaces.View;
 import din_reto0.interfaces.Model;
 import java.util.ResourceBundle;
 /**
+  * This is the main class of the program that will execute the whole application
+  * @author Nico
   * 
-  * @author nikol
+  * 
  */
 public class Application {
-    /**
+    /**This is the main class of the program that will execute the whole application
      * 
-     * @param args 
+     * @param args
+     * 
+     * 
      */
     public static void main(String[] args) {
             ResourceBundle configFile = 

@@ -53,8 +53,10 @@ public abstract class MasterConnection {
      * returns the number of rows of the full table 
      * in the database.
      * @throws SQLException in case something goes wrong.
+     * @param database indicating the name of the database
+     * @return int the quantity of the rows collected from the database
      */
-    protected int cantidadTotal(String database) {
+    protected int cantidadTotal(String database) throws SQLException{
         int pTotal = -1;
         database = "SELECT COUNT(*) FROM " + database;
         
