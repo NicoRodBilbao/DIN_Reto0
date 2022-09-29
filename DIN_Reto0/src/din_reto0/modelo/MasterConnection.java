@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din_reto0.modelo;
 
 import java.sql.Connection;
@@ -30,12 +25,8 @@ public abstract class MasterConnection {
     protected void openConnection() {
         con = null;
         try {
-            System.out.println(url);
-            System.out.println(user);
-            System.out.println(pass);
             con = DriverManager.getConnection(url, user, pass);
         } catch (SQLException e) {
-            System.err.println("Mal");
         }
     }
 
@@ -67,7 +58,6 @@ public abstract class MasterConnection {
                 rs.next();
             pTotal = rs.getInt(1);
         } catch (SQLException sqle) {
-            System.err.println("Mal cerrar");
         } finally {
             closeConnection();
         }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din_reto0.modelo;
 
 import din_reto0.interfaces.Model;
@@ -11,7 +6,11 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+    /**
+     * This method searches for a database named "helloworld" and gets the 
+     * message 
+     * @author Nico-Nerea
+     */
 public class ModelDB extends MasterConnection implements Model {
    
         private static final String bucarMsg = 

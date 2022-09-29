@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din_reto0.vista;
 
 import din_reto0.interfaces.View;
@@ -15,14 +10,15 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-/**
- *
- * @author nikol
- */
+    /**
+     * This class shows a message via window (Javafx)
+     * 
+     * @author Nico-Nerea
+     */
 public class ViewGUI extends javafx.application.Application implements View {
     public static String localGreeting;
-    
-     @Override
+        
+    @Override
     public void start(Stage primaryStage) {
         Label label = new Label(localGreeting   );
    
@@ -36,9 +32,11 @@ public class ViewGUI extends javafx.application.Application implements View {
         primaryStage.show();
     }
 
-
+        /**
+         * Starts the window and shows the greeting gotten on it
+         * @param greeting The message recieved that will be shown
+         */
       @Override
-     
     public  void showGreeting(String greeting) {
         localGreeting=greeting;
         launch(greeting);
