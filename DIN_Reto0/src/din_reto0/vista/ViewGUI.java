@@ -24,7 +24,7 @@ public class ViewGUI extends javafx.application.Application implements View {
     
      @Override
     public void start(Stage primaryStage) {
-        Label label = new Label(localGreeting);
+        Label label = new Label(localGreeting   );
    
         StackPane root = new StackPane();
         root.getChildren().add(label);
