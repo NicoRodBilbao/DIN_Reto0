@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Nerea
+ * @author Nico-Nerea
  */
 public class ModelDBTest {
     ModelDB modelBD = null;
@@ -25,7 +25,7 @@ public class ModelDBTest {
     @Test
     public void testGetGreeting(){
         modelBD = new ModelDB();
-        assertEquals(modelBD.getGreeting(), "Prototo"); 
+        assertEquals(modelBD.getGreeting(), "Hello world from DB"); 
     }
     
     //Testear constructor (objeto no nulo y de la clase que tiene que ser)

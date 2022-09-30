@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Nerea
+ * @author Nico-Nerea
  */
 public class ModelImplementationTest {
     ModelImplementation modelFile = null;
@@ -26,7 +26,7 @@ public class ModelImplementationTest {
     @Test
     public void testGetGreeting() {
         modelFile = new ModelImplementation();
-        assertEquals(modelFile.getGreeting(), "Hello wol");
+        assertEquals(modelFile.getGreeting(), "Hello world from a file");
     }
     //Testear constructor (objeto no nulo y de la clase que tiene que ser)
     @Test
